@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    hyphens: none;
+    height: 98vh;
+    width:100vw;
+}
+
+.container{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+
+.upper-half{
+    height:30%;
+    background-color: hsl(292, 42%, 14%);
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.faq-container{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2.5%;
+    top: 17.8%;
+    left:29%;
+    width:42%;
+    height:auto;
+    position: absolute;
+    display: inline-block;
+    
+}
+
+.faq-text-container{
+    padding: 2.5rem;
+    padding-top: 3.125rem;
+    margin:0;
+    color: hsl(292, 42%, 14%);
+}
+
+.title{
+    display:flex;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 25px;
+    gap: 30px;
+}
+
+.title h1{
+    margin:0;
+}
+
+
+.lower-half{
+    height: 70%;
+    background-color: hsl(275, 100%, 97%);
+}
+
+.questions{
+    /* display:flex;
+    align-items: center;
+    flex-wrap: wrap; */
+    
+}
+
+.questions h2{
+    font-weight: 600;
+    font-size:18px;
+    flex: 0 0 95%;
+}
+
+.questions-row-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.questions h2:hover{
+    color: hsl(281, 83%, 54%);
+}
+
+.questions p{
+    display: none;
+    flex: 1 1 100%;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+}
