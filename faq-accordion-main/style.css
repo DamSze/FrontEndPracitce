@@ -56,8 +56,8 @@ body{
     box-sizing: border-box;
     padding-bottom: 25px;
     font-weight: 700;
-    font-size: 25px;
-    gap: 30px;
+    font-size: clamp(1.3rem, 2.5vw,1.563rem);
+    gap: 3.5vw;
 }
 
 .title h1{
@@ -80,12 +80,13 @@ body{
 .questions h2{
     font-weight: 600;
     font-size:18px;
-    flex: 0 0 95%;
+    flex: 0 0 77%;
 }
 
 .questions-row-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -99,4 +100,16 @@ body{
     flex: 1 1 100%;
     color: hsl(292, 16%, 49%);
     font-weight: 400;
+}
+
+@media(max-width: 900px){
+    .title img{
+        width:30px;
+    }
+
+    .faq-container{
+       left:7.5%;
+       width:85%;
+    }
+
 }

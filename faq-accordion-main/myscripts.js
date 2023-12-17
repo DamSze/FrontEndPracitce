@@ -1,8 +1,6 @@
 const rows = document.querySelectorAll(".questions-row-container");
 const content = document.querySelectorAll(".questions p");
 
-console.log(rows);
-let p_display = "none";
 
 
 content.forEach(element =>{
@@ -11,10 +9,17 @@ content.forEach(element =>{
 
 rows.forEach(row => {
     const content = row.querySelector("p");
+    const plus_minus_image = row.querySelector("img");
     row.addEventListener('click', () =>{
-        content.style.display=="none" ? p_display = "block" : p_display = "none";
+        if(content.style.display=="none"){
+            p_display = "block";
+            plus_minus_image.src="./assets/images/icon-minus.svg";
+        } else{
+            p_display = "none";
+            plus_minus_image.src="./assets/images/icon-plus.svg";
+
+        } 
         content.style.display = p_display;
-        console.log("cfasd")
     });
 
 });
