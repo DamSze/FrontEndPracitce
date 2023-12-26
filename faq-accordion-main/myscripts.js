@@ -43,7 +43,7 @@ let changeLowerHalfSize = () =>{
         finalContainerheight = 100*(faqContainerHeight-containerHeight)/containerHeight;
     }
     lower_half.style.height = 70 + finalContainerheight + "%";
-    console.log(lower_half.style.height);
+
 }
 
 window.addEventListener('resize', changeLowerHalfSize)
