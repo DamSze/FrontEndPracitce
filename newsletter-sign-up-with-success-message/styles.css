@@ -25,7 +25,7 @@ body,html{
 .grid-container{
     width: 56rem;
     margin: auto;
-    border-radius: 5%;
+    border-radius: 25px;
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     padding:20px;
@@ -35,7 +35,7 @@ body,html{
 .side-img{
     background-image: url("./assets/images/illustration-sign-up-desktop.svg");
     background-repeat: no-repeat;
-    border-radius: 5%;
+    border-radius: 25px;
 }
 
 .side-content{
@@ -58,7 +58,7 @@ body,html{
 }
 
 .features > *{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .features img{
@@ -74,21 +74,56 @@ body,html{
 .email-input p{
     font-size: 12px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .email-input input[type="email"]{
     display:block;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding: 8px 12px;
     width:95%;
-    height: 40px;
-    border-radius: 5px;
+    height: 60px;
+    border-radius: 12px;
     border: 1.25px solid #d3d3d3;
     border-collapse: collapse;
+}
+
+.email-input input[type="email"]:hover{
+    cursor: pointer;
 }
 .email-input input[type="email"]:focus{
     color: inherit;
     border-color: hsl(234, 29%, 20%);
     outline: none;
+}
+
+.button-subscribe{
+    padding: 8px 12px;
+    width:95%;
+    height: 60px;
+    font-weight: 700;
+    border-radius: 12px;
+    margin-bottom: 80px;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+}
+
+.button-subscribe:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right,rgb(255, 70, 101),  hsl(4, 100%, 67%), rgb(243, 128, 61))!important;
+}
+
+
+/* TODO BETTER RED COLORS*/
+.incorrect-email{
+    background-color: rgba(255, 0, 0, 0.555);
+    color: red;
+    border: 1px red;
+}
+
+.correct-email{
+    background-color: rgba(94, 255, 0, 0.555);
+    color: green;
+    border: 1px green;
 }
