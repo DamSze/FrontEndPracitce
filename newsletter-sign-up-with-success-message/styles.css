@@ -122,6 +122,21 @@ body,html{
     border: 1px red;
 }
 
+.input-top-text{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.email-input p{
+    display: inline-block;
+}
+
+#error-message{
+    display: none;
+    color:rgba(255, 0, 0, 0.555);
+}
+
 .correct-email{
     background-color: rgba(94, 255, 0, 0.555);
     color: green;
