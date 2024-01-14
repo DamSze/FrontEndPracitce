@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap');
 *{
     hyphens: none;
     padding: 0;
@@ -40,7 +40,7 @@ body,html{
 
 .side-content{
     padding: 30px 30px 0 30px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     color: hsl(234, 29%, 20%);
 }
@@ -53,6 +53,7 @@ body,html{
     
 }
 
+
 .features{
     margin: 30px 0;
 }
@@ -61,7 +62,7 @@ body,html{
     margin-bottom: 15px;
 }
 
-.features img{
+.success-img{
     width: 20px;
     margin-right: 10px;
 }
@@ -137,8 +138,40 @@ body,html{
     color:rgba(255, 0, 0, 0.555);
 }
 
-.correct-email{
-    background-color: rgba(94, 255, 0, 0.555);
-    color: green;
-    border: 1px green;
+
+
+.success-container{
+    color:hsl(234, 29%, 20%);
+    border: solid white;
+    margin:auto;
+    padding: 40px 50px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    width: 30rem;
+}
+
+.success-container img{
+    width:60px;
+}
+
+.success-container h1{
+    line-height: 55px;
+}
+
+#dismiss-btn{
+    
+}
+
+#email-value{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.success-container button{
+    margin-bottom: 15px;
+}
+
+.confirm-message{
+    padding-bottom: 50px;
+    font-weight: 500;
 }

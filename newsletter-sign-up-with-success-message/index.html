@@ -25,15 +25,15 @@
         <p class="description">  Join 60,000+ product managers receiving monthly updates on:</p>
         <div class="features">
           <div class="feature-1">
-            <img src="./assets/images/icon-success.svg">
+            <img class="success-img" src="./assets/images/icon-success.svg">
             <p>Product discovery and building what matters</p>
           </div>
           <div class="feature-2">
-            <img src="./assets/images/icon-success.svg">
+            <img class="success-img" src="./assets/images/icon-success.svg">
             <p>Measuring to ensure updates are a success</p>
           </div>
           <div class="feature-3">
-            <img src="./assets/images/icon-success.svg">
+            <img class="success-img" src="./assets/images/icon-success.svg">
             <p>And much more!</p>
           </div>
         </div>
@@ -47,6 +47,13 @@
         <button class="button-subscribe">Subscribe to monthly newsletter</button>
       </div>
       <div class="side-img"></div>
+    </div>
+    <div class="success-container" style="display: none;">
+      <img class="success-img" src="./assets/images/icon-success.svg">
+      <h1 class="main-header"> Thanks for subscribing!</h1>
+      <p class="confirm-message">A confirmation email has been sent to <u id="email-value"></u>. 
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="button-subscribe" id="dismiss-btn">Dismiss message</button>
     </div>
   </div>
 
